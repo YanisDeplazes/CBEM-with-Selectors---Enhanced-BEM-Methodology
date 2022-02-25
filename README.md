@@ -9,7 +9,7 @@ Some blocks and elements needs a parent container for styling, which is used out
 BEM dictates that you should add classes to each element in a component. 
 
 ## CBEM with Selectors ##
-** CBEM with Selectors - Enhanced BEM Methodology ** is not officialy created by the BEM author and is just a methodology that I'm using additionaly to BEM in order to make using CSS a bit easier.
+**CBEM with Selectors - Enhanced BEM Methodology** is not officialy created by the BEM author and is just a methodology that I'm using additionaly to BEM in order to make using CSS a bit easier.
 CBEM with Selectors is an extension to the BEM Methodligy to avoid the main problems you get while using BEM. CBEM is using **Container**, **Block**, **Element** and **Modifier** as it's main structure. Container alows to add a Container around a block with a specific naming convention. 
 ### RS ###
 To get less CSS code, we use RS (reusable, specific).
@@ -26,7 +26,7 @@ Using multiple classes to identifing  the Modifier regarding it's parents.
 
 ## Container ##
 In order to use a container above a block or element we use a dash `-` r to make it clear that it relates to your block. This is used to name a parent HTML element of a Block or Element. Used to name Wrapper, Container, etc of a block.
-** HTML ** 
+**HTML** 
 ```
 <div class="block-container">
    <div class="block-wrapper">
@@ -35,7 +35,7 @@ In order to use a container above a block or element we use a dash `-` r to make
    </div>
 </div>
 ```
-** CSS **
+**CSS**
 .block-container{
 }
 .block-wrapper{
@@ -48,7 +48,7 @@ Reusable Blocks can be reused within the project. 
 Specific Blocks are identified by its Class or ID.
 ### Specific Reusable Block ###
 Specific Blocks Resusable Block is reusable and is identified by its Class or ID within the project. 
-** HTML ** 
+**HTML** 
 ```
 <nav>
 </nav>
@@ -57,17 +57,17 @@ Specific Blocks Resusable Block is reusable and is identified by its Class or ID
 <nav id="navigation">
 </nav>
 ```
-** CSS **
+**CSS**
 ```
-Reusable Block
+*Reusable Block*
 nav {
   
 }
-Specific Block
+*Specific Block*
 #navigation {
   
 }
-Reusable Specific Block
+*Reusable Specific Block*
 .navigation {
   
 }
@@ -75,7 +75,7 @@ Reusable Specific Block
 ## Elements ##
 A part of a block that has no standalone meaning and is semantically tied to its block. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS.
 
-** HTML ** 
+**HTML** 
 ```
 <div class="block">
    <span></span>
@@ -85,15 +85,15 @@ A part of a block that has no standalone meaning and is semantically tied to its
 ```
 ** CSS **
 ```
-Reusable Element (Selector)
+*Reusable Element (Selector)*
 .block > span{
    
 }
-Specific Reusable Element (Selector)
+*Specific Reusable Element (Selector)*
 .block > .block__element{
    
 }
-Specific Reusable Element
+*Specific Reusable Element*
 .block__element{
 
 }
@@ -101,7 +101,7 @@ Specific Reusable Element
 ## Modifier ##
 A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS.
 
-** HTML ** 
+**HTML** 
 ```
 <div class="block">
    <div class="block__element modifier"></div>
@@ -110,11 +110,11 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
 ```
 **CSS**
 ```
-Specific Reusable Modifier (Selector)
+*Specific Reusable Modifier (Selector)*
 .block__element.modifier2{
    //Reusable outside
 }
-Specific Reusable Modifier
+*Specific Reusable Modifier*
 .modifier {
    //Specific
 }
