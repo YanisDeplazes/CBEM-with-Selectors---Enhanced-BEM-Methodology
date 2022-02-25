@@ -36,10 +36,12 @@ In order to use a container above a block or element we use a dash `-` r to make
 </div>
 ```
 ### CSS ###
+```
 .block-container{
 }
 .block-wrapper{
 }
+```
 ## Block ##
 Standalone entity that is meaningful on its own. 
 
@@ -55,21 +57,21 @@ Standalone entity that is meaningful on its own. 
 ### CSS ###
 
 #### Reusable Block ####
-Reusable Blocks can be reused within the project. 
+Block is reusable.
 ```
 nav {
   
 }
 ```
 #### Specific Block ####
-Specific Blocks are identified by its Class or ID.
+Block is identified by its Class or ID.
 ```
 #navigation {
   
 }
 ```
 #### Reusable Specific Block ####
-Specific Blocks Resusable Block is reusable and is identified by its Class or ID within the project. 
+Block is reusable and is identified by its Class or ID. 
 ```
 .navigation {
   
@@ -88,18 +90,21 @@ A part of a block that has no standalone meaning and is semantically tied to its
 ```
 ###  CSS ###
 ####  Reusable Element with Selector ####
+Elements are children child of the `.block`.
 ```
 .block > span{
    
 }
 ```
 #### Specific Reusable Element with Selector ####
+Elements are children of the `.block` and has a class or id.
 ```
 .block > .block__element{
    
 }
 ```
 #### Specific_Reusable_Element ####
+Elements can be anywhere and has a class or id.
 ```
 .block__element{
 
@@ -117,14 +122,14 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
 ```
 ### CSS ###
 #### Specific Reusable Modifier Selector ####
-Modifier is within the block__element and has a specific class name.
+Modifier is within the block__element and has a class or id.
 ```
 .block__element.modifier{
 
 }
 ```
 #### Specific Reusable Modifier #### 
-Modifier is can be anywhere and has a specific class name.
+Modifier can be anywhere and has a class or id.
 ```
 .modifier {
 
