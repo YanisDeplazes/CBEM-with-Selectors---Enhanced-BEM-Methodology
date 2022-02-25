@@ -26,7 +26,7 @@ Using multiple classes to identifing  the Modifier regarding it's parents.
 
 ## Container ##
 In order to use a container above a block or element we use a dash `-` r to make it clear that it relates to your block. This is used to name a parent HTML element of a Block or Element. Used to name Wrapper, Container, etc of a block.
-**HTML** 
+### HTML ###
 ```
 <div class="block-container">
    <div class="block-wrapper">
@@ -35,7 +35,7 @@ In order to use a container above a block or element we use a dash `-` r to make
    </div>
 </div>
 ```
-**CSS**
+### CSS ###
 .block-container{
 }
 .block-wrapper{
@@ -43,7 +43,7 @@ In order to use a container above a block or element we use a dash `-` r to make
 ## Block ##
 Standalone entity that is meaningful on its own. 
 
-**HTML** 
+### HTML ###
 ```
 <nav>
 </nav>
@@ -52,7 +52,7 @@ Standalone entity that is meaningful on its own. 
 <nav id="navigation">
 </nav>
 ```
-**CSS**
+### CSS ###
 
 #### Reusable Block ####
 Reusable Blocks can be reused within the project. 
@@ -78,7 +78,7 @@ Specific Blocks Resusable Block is reusable and is identified by its Class or ID
 ## Elements ##
 A part of a block that has no standalone meaning and is semantically tied to its block. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS.
 
-**HTML** 
+### HTML ### 
 ```
 <div class="block">
    <span></span>
@@ -86,7 +86,7 @@ A part of a block that has no standalone meaning and is semantically tied to its
    <div class="block__element"></div>
 </div>
 ```
-** CSS **
+###  CSS ###
 ####  Reusable Element with Selector ####
 ```
 .block > span{
