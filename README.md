@@ -38,8 +38,10 @@ In order to use a container above a block or element we use a dash `-` r to make
 ### CSS ###
 ```
 .block-container{
+
 }
 .block-wrapper{
+
 }
 ```
 ## Block ##
@@ -57,21 +59,21 @@ Standalone entity that is meaningful on its own. 
 ### CSS ###
 
 #### Reusable Block ####
-Block is reusable.
+Selects all `<nav>` blocks.
 ```
 nav {
   
 }
 ```
 #### Specific Block ####
-Block is identified by its Class or ID.
+Select the blocks with the ID `navigation`.
 ```
 #navigation {
   
 }
 ```
 #### Reusable Specific Block ####
-Block is reusable and is identified by its Class or ID. 
+Select all blocks with the class `navigation`.
 ```
 .navigation {
   
@@ -90,28 +92,28 @@ A part of a block that has no standalone meaning and is semantically tied to its
 ```
 ###  CSS ###
 ####  Reusable Element with Selector ####
-Elements are children child of the `.block`.
+Selects all `<span>` elements where the parent is a `.block` element.
 ```
 .block > span{
    
 }
 ```
 #### Specific Reusable Element with Selector ####
-Elements are children of the `.block` and has a class or id.
+Select all elements with the class `block__element` where the parent is a `.block` element.
 ```
 .block > .block__element{
    
 }
 ```
 #### Specific_Reusable_Element ####
-Elements can be anywhere and has a class or id.
+Select all elements with the class `block__element`.
 ```
 .block__element{
 
 }
 ```
 ## Modifier ##
-A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS.
+A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS. In the BEM method, you normally name the block inside the modifier, but to save lines of code, we only use the modifier name, and if it refers to its parent, we use the specific reusable modifier selector.
 
 ### HTML ###
 ```
@@ -122,14 +124,14 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
 ```
 ### CSS ###
 #### Specific Reusable Modifier Selector ####
-Modifier is within the block__element and has a class or id.
+Selects all modifiers with both `block__element` and `modifier` set within its class attribute.
 ```
 .block__element.modifier{
 
 }
 ```
 #### Specific Reusable Modifier #### 
-Modifier can be anywhere and has a class or id.
+Select all modifiers with the class `modifier`.
 ```
 .modifier {
 
