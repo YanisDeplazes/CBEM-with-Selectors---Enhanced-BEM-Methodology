@@ -59,15 +59,15 @@ Specific Blocks Resusable Block is reusable and is identified by its Class or ID
 ```
 **CSS**
 ```
-*Reusable Block*
+//Reusable_Block
 nav {
   
 }
-*Specific Block*
+//Specific_Block
 #navigation {
   
 }
-*Reusable Specific Block*
+//Reusable_Specific_Block
 .navigation {
   
 }
@@ -85,15 +85,15 @@ A part of a block that has no standalone meaning and is semantically tied to its
 ```
 ** CSS **
 ```
-*Reusable Element (Selector)*
+//Reusable_Element_Selector
 .block > span{
    
 }
-*Specific Reusable Element (Selector)*
+//Specific_Reusable_Element_Selector
 .block > .block__element{
    
 }
-*Specific Reusable Element*
+//Specific_Reusable_Element 
 .block__element{
 
 }
@@ -101,21 +101,25 @@ A part of a block that has no standalone meaning and is semantically tied to its
 ## Modifier ##
 A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS.
 
-**HTML** 
+### HTML ###
 ```
 <div class="block">
    <div class="block__element modifier"></div>
    <div class="block__element modifier"></div>
 </div>
 ```
-**CSS**
+### CSS ###
+**Specific Reusable Modifier Selector**
+Modifier is within the block__element and has a specific class name.
 ```
-*Specific Reusable Modifier (Selector)*
-.block__element.modifier2{
-   //Reusable outside
+.block__element.modifier{
+
 }
-*Specific Reusable Modifier*
+```
+**Specific Reusable Modifier**
+Modifier is can be anywhere and has a specific class name.
+```
 .modifier {
-   //Specific
+
 }
 ```
