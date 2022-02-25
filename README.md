@@ -1,7 +1,7 @@
 # CBEM with Selectors - Enhanced BEM Methodology #
 
 ## BEM ##
-The Block, Element, Modifier (BEM) methodology is a popular naming convention for classes in HTML and CSS. Full Article
+The Block, Element, Modifier (BEM) methodology is a popular naming convention for classes in HTML and CSS. [Full Article](https://blog.yanis.work/block-element-modifier-bem-css-methodology-df9db9771c6f)
 ### Main problems with BEM ###
 #### 1. Container ####
 Some blocks and elements needs a parent container for styling, which is used outside of the block. It feels slightly wrong to call it something like .block__container and have it placed outside the .block block itself.
@@ -14,15 +14,18 @@ CBEM with Selectors is an extension to the BEM Methodligy to avoid the main prob
 ### RS ###
 To get less CSS code, we use RS (reusable, specific).
 #### Reusable #####
-Are Reusable HTML Elements can be reused within the project.
+Reusable HTML Elements which can occure more than once within a site. 
 #### Specific ####
-Speficic HTML Elements can be identified with it's class or id within the project.
+Speficic HTML Elements which is dentified with it's `class` or `id`.
+
 ### Selectors ###
-In CSS, selectors are patterns used to select the element(s) you want to style. full article
+In CSS, selectors are patterns used to select the element(s) you want to style. 
 #### Child ####
 Child Block of a Block or Element. Using the Selector > to identify the child element. 
 #### Multiclass ####
-Using multiple classes to identifing  the Modifier regarding it's parents.
+Using multiple classes to identifing the Modifier regarding it's parents.
+
+[All Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
 ## Container ##
 In order to use a container above a block or element we use a dash `-` r to make it clear that it relates to your block. This is used to name a parent HTML element of a Block or Element. Used to name Wrapper, Container, etc of a block.
@@ -66,7 +69,7 @@ nav {
 }
 ```
 #### Specific Block ####
-Select the blocks with the ID `navigation`.
+Select the block with the ID `navigation`.
 ```
 #navigation {
   
@@ -113,7 +116,7 @@ Select all elements with the class `block__element`.
 }
 ```
 ## Modifier ##
-A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS. In the BEM method, you normally name the block inside the modifier, but to save lines of code, we only use the modifier name, and if it refers to its parent, we use the specific reusable modifier selector.
+A flag on a block or element. Use it to change the appearance or behavior. Depending on whether you want to use it in relation to its parent, you can use the selector to create a relationship within the CSS. In the BEM method, you normally name the block inside the modifiers classname, but to save lines of code, we only use the modifier name, and if it refers to its parent, we use the specific reusable modifier selector.
 
 ### HTML ###
 ```
