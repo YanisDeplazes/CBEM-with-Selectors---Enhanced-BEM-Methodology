@@ -109,14 +109,14 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
 </div>
 ```
 ### CSS ###
-**Specific Reusable Modifier Selector** 
+#### Specific Reusable Modifier Selector ####
 Modifier is within the block__element and has a specific class name.
 ```
 .block__element.modifier{
 
 }
 ```
-**Specific Reusable Modifier** 
+#### Specific Reusable Modifier #### 
 Modifier is can be anywhere and has a specific class name.
 ```
 .modifier {
