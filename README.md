@@ -108,7 +108,7 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
    <div class="block__element modifier"></div>
 </div>
 ```
-** CSS **
+**CSS**
 ```
 Specific Reusable Modifier (Selector)
 .block__element.modifier2{
