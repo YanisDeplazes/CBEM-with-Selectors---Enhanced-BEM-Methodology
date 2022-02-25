@@ -18,10 +18,10 @@ Speficic HTML Elements which is dentified with it's `class` or `id`.
 
 ## Selectors ##
 In CSS, selectors are patterns used to select the element(s) you want to style. 
-### Child ###
-Child Block of a Block or Element. Using the Selector > to identify the child element. 
-### Multiclass ###
-Using multiple classes to identifing the Modifier regarding it's parents.
+### Child Elements ###
+Using the `>` to identify child elements with their parents. 
+### multiple classes ###
+Using the `class1.class2` to identify modifier depending on their parents class. 
 
 [All Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
