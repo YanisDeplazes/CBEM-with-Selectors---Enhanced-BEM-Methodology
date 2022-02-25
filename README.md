@@ -42,12 +42,7 @@ In order to use a container above a block or element we use a dash `-` r to make
 }
 ## Block ##
 Standalone entity that is meaningful on its own. 
-### Reusable Block ###
-Reusable Blocks can be reused within the project. 
-### Specific Block ###
-Specific Blocks are identified by its Class or ID.
-### Specific Reusable Block ###
-Specific Blocks Resusable Block is reusable and is identified by its Class or ID within the project. 
+
 **HTML** 
 ```
 <nav>
@@ -58,16 +53,24 @@ Specific Blocks Resusable Block is reusable and is identified by its Class or ID
 </nav>
 ```
 **CSS**
+
+#### Reusable Block ####
+Reusable Blocks can be reused within the project. 
 ```
-//Reusable_Block
 nav {
   
 }
-//Specific_Block
+```
+#### Specific Block ####
+Specific Blocks are identified by its Class or ID.
+```
 #navigation {
   
 }
-//Reusable_Specific_Block
+```
+#### Reusable Specific Block ####
+Specific Blocks Resusable Block is reusable and is identified by its Class or ID within the project. 
+```
 .navigation {
   
 }
@@ -84,16 +87,20 @@ A part of a block that has no standalone meaning and is semantically tied to its
 </div>
 ```
 ** CSS **
+####  Reusable Element with Selector ####
 ```
-//Reusable_Element_Selector
 .block > span{
    
 }
-//Specific_Reusable_Element_Selector
+```
+#### Specific Reusable Element with Selector ####
+```
 .block > .block__element{
    
 }
-//Specific_Reusable_Element 
+```
+#### Specific_Reusable_Element ####
+```
 .block__element{
 
 }
