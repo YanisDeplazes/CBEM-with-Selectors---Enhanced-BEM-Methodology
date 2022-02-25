@@ -9,8 +9,8 @@ BEM dictates that you should add classes to each element in a component. 
 # CBEM with Selectors - Enhanced BEM Methodology #
 **CBEM with Selectors - Enhanced BEM Methodology** is not officialy created by the BEM author and is just a methodology that I'm using additionaly to BEM in order to make using CSS a bit easier.
 CBEM with Selectors is an extension to the BEM Methodligy to avoid the main problems you get while using BEM. CBEM is using **Container**, **Block**, **Element** and **Modifier** as it's main structure. Container alows to add a Container around a block with a specific naming convention. 
-## RS ##
-To get less CSS code, we use RS (reusable, specific).
+## Reusable and Specific HTML Elements ##
+To save code we have to ask ourselves for each element if the code has to be reusable and specific. To apply this correctly, you need to fully understand the design and prototype before implementing a website, otherwise there could be complications.
 ### Reusable ####
 Reusable HTML Elements which can occure more than once within a site. 
 ### Specific ###
@@ -73,7 +73,7 @@ Select the block with the ID `navigation`.
   
 }
 ```
-### Reusable Specific Block ###
+### Reusable & Specific Block ###
 Select all blocks with the class `navigation`.
 ```
 .navigation {
@@ -99,14 +99,14 @@ Selects all `<span>` elements where the parent is a `.block` element.
    
 }
 ```
-### Specific Reusable Element with Selector ###
+### Reusable & Specific Element with Selector ###
 Select all elements with the class `block__element` where the parent is a `.block` element.
 ```
 .block > .block__element{
    
 }
 ```
-### Specific_Reusable_Element ###
+### Reusable & Specific Element ###
 Select all elements with the class `block__element`.
 ```
 .block__element{
@@ -124,14 +124,14 @@ A flag on a block or element. Use it to change the appearance or behavior. Depen
 </div>
 ```
 ## CSS ##
-### Specific Reusable Modifier Selector ###
+### Reusable & Specific Modifier with Selector ###
 Selects all modifiers with both `block__element` and `modifier` set within its class attribute.
 ```
 .block__element.modifier{
 
 }
 ```
-### Specific Reusable Modifier ### 
+### Reusable & Specific Modifier ### 
 Select all modifiers with the class `modifier`.
 ```
 .modifier {
